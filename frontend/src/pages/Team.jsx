@@ -23,7 +23,7 @@ export default function Team() {
 
   const getTeams = () => {
     axios
-      .get("http://localhost:3030/api/teams")
+      .get("https://fifa-qa7i.onrender.com/api/teams")
       .then((res) => setTeams(res.data))
       .catch((err) => console.log(err));
   };
@@ -34,7 +34,7 @@ export default function Team() {
 
   const addTeam = (teamName) => {
     axios
-      .post("http://localhost:3030/api/teams", { name: teamName })
+      .post("https://fifa-qa7i.onrender.com/api/teams", { name: teamName })
       .then(() => getTeams())
       .catch((err) => console.log(err));
   };

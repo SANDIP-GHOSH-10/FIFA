@@ -25,7 +25,7 @@ export default function MatchForm({ addMatch }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3030/api/teams")
+      .get("https://fifa-qa7i.onrender.com/api/teams")
       .then((res) => setTeamNames(res.data))
       .catch((err) => console.log(err));
   }, []);

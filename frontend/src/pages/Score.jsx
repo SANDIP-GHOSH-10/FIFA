@@ -25,7 +25,7 @@ export default function Score() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3030/api/matches/${id}`)
+      .get(`https://fifa-qa7i.onrender.com/api/matches/${id}`)
       .then((res) => {
         setMatchData(res.data);
       })

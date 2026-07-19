@@ -20,7 +20,7 @@ export default function Match() {
 
   const getMatches = () => {
     axios
-      .get("http://localhost:3030/api/matches")
+      .get("https://fifa-qa7i.onrender.com/api/matches")
       .then((res) => setMatches(res.data))
       .catch((err) => console.log(err));
   };
@@ -31,7 +31,7 @@ export default function Match() {
 
   const addMatch = (matchData) => {
     axios
-      .post("http://localhost:3030/api/matches", matchData)
+      .post("https://fifa-qa7i.onrender.com/api/matches", matchData)
       .then(() => {
         getMatches();
       })
