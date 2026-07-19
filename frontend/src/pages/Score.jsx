@@ -44,7 +44,7 @@ export default function Score() {
     setMatchData(updated);
 
     axios
-      .put(`http://localhost:3030/api/matches/${id}`, updated)
+      .put(`https://fifa-qa7i.onrender.com/api/matches/${id}`, updated)
       .catch((err) => console.log(err));
   };
 
@@ -60,7 +60,7 @@ export default function Score() {
     setMatchData(updated);
 
     axios
-      .put(`http://localhost:3030/api/matches/${id}`, updated)
+      .put(`https://fifa-qa7i.onrender.com/api/matches/${id}`, updated)
       .catch((err) => console.log(err));
   };
 
@@ -77,7 +77,7 @@ export default function Score() {
     setMatchData(updated);
 
     axios
-      .put(`http://localhost:3030/api/matches/${id}`, updated)
+      .put(`https://fifa-qa7i.onrender.com/api/matches/${id}`, updated)
       .catch((err) => console.log(err));
   };
 
